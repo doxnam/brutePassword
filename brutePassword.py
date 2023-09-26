@@ -20,7 +20,6 @@ class Login:
         try:
             self.f = open(password, "r")
             self.wordlist = list([(word.strip()) for word in self.f.readlines()])
-            print(self.wordlist)
             self.f.close()
         except Exception as e:
             print("[-] Error:\n", e)
